@@ -1,6 +1,6 @@
 <?php 
 
-//require 'inc_conn.php';
+//require inc_conn.php
 require 'inc_conn.php';
 //Both values must be same
 define('PROJECT_API_KEY', 'pushdata_test_2025');

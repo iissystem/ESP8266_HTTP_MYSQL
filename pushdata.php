@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if($api_key == PROJECT_API_KEY) {
 		$temperature = escape_data($_POST["temperature"]);
 		$humidity = escape_data($_POST["humidity"]);
-		$sql = "INSERT INTO WS_table(temperature,humidity,created_date) 
+		$sql = "INSERT INTO WS_station(temperature,humidity,created_date) 
 			VALUES('".$temperature."','".$humidity."','".date("Y-m-d H:i:s")."')";
 
 		if($conn->query($sql) === FALSE)
